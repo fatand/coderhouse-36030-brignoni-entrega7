@@ -1,0 +1,764 @@
+/* SE AGREGA PARA RESETEAR VALORES QUE TOMABA EL NAVEGADOR SOLO*/ 
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+section{
+    display: inline-block;
+}
+/*********************************************************************/ 
+
+body{
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+    background-size: cover;
+
+    max-width: 1440px;
+    margin: auto;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    background-color: #abb1b8;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    color: white; 
+}
+
+header img{
+    height: 30px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+header img:hover{
+    border-radius: 10px;
+    background-color: white;
+}
+
+.header-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 16px 0 10px 0;
+    padding:10px 20px 0 0px;
+    height: 30px;
+}
+
+.header-right-a{
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-right-a:hover{
+    transform: scale(1.2);
+}
+
+h1{
+    color:#004225;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    padding-left:30px;
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover{
+    transform: scale(1.1);
+}
+
+.header-nav{
+    padding: 5px 10px 0 5px;
+    display:flex;
+    flex-direction: column;
+}
+
+.header-nav li{
+    display: inline-block;
+    margin:2px 10px 2px 10px;
+    padding:0;
+    align-content: flex-end;
+    font-size: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-nav li:hover{
+    text-decoration: underline;
+}
+
+.header-nav-a{
+    font-style: normal;
+    color:white;
+    text-decoration:none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-nav-a:hover {
+    color: #004225;
+    font-weight: 600;
+}
+
+
+main{
+    grid-area: main;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+span{
+    font-weight: bold;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #abb1b8;
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 0 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    height:30px;
+}
+
+.social-icons li{
+    margin:0 10px;
+    align-items: center;
+}
+
+.footer-contact{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer-contact h4{
+    text-align: center;
+}
+
+.contact-data{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-data li{
+    padding: 0px 5px 0px 5px;
+}
+
+.company-name{
+    color: #004225;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    padding:5px 10px;
+    margin: 0;
+    font-size: 25px;
+    vertical-align: center;
+}
+
+.social-icons{
+    margin:0;
+    padding:5px 5px;
+    display: inline-block;
+}
+
+.social-icons li{
+    display: inline-block;
+}
+
+footer div ul{
+    list-style-type:none;
+    margin: 0 0 20px 0;
+    display: block;
+}
+
+h2{
+    padding:  0 0 0 0;
+    color: black;
+
+}
+.h2-name{
+    padding:  0 0 0 0;
+    color: #004225;
+    text-align: center;
+}
+
+h3{
+    color: black;
+    display: inline-block;
+    padding: 0 0 0 10px;
+
+    grid-area: h3;
+}
+
+.h3-frase{
+    color: white;
+    display: inline-block;
+    padding: 0 0 0 10px;
+    animation-name: movimiento-frase;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+
+/* ANIMACION A FRASE */
+
+@keyframes movimiento-frase {
+    0%{
+        transform: scale(1.2);
+        text-decoration: underline;
+    }
+
+    50%{
+        transform: scale(1);      
+    }
+
+    100%{
+        transform: scale(1.2);
+    }
+
+}
+
+h4{
+    color: black;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+
+.texto-empresa{
+    text-align: center;
+}
+
+.frase {
+    text-align: center;
+    background: #004225;
+    color: white;
+}
+
+p{
+    padding:10px;
+}
+
+.banner{
+    display: inline-block;
+    width: 100vw;
+    max-width: 1440px;
+}
+
+
+
+.p-genero{
+    color: black;
+    display: inline-block;
+    padding: 0 20vw;
+    font-weight: bold;
+}
+
+.select-catalogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px rgb(255, 255, 255);
+    max-width: 1440px;
+}
+
+.select-gender{
+    background-color: rgb(255, 255, 255);
+    border: solid 3px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    max-width: 700px;
+}
+
+.select-gender img{
+    border-radius: 50px;
+    width: 40vw;
+    border: solid 3px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.map{
+    height: 250px;
+    width: 300px;
+}
+
+.main-contacto{
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 0 10px 0;
+}
+
+.formulario{
+    margin: 10px 10px;
+}
+
+.div-contact{
+    margin: 10px 10px;
+}
+
+.div-contact ul{
+    list-style-type: none;
+}
+
+.div-contact ul li{
+    margin: 10px;
+}
+
+/* Estilo particular a cart.html */
+
+.main-cart{
+    display: grid;
+    grid-template-areas: 
+    "cart-section1"
+    "cart-aside"
+    ;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-section1{
+    grid-area: cart-section1 ;
+
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+
+.cart-section1 img{
+    height: 200px;
+    border-radius: 10px;
+}
+
+.cart-section1 p{
+    margin: 0;
+    padding: 2px;
+}
+
+.cart-product1{
+    display: flex;
+    margin: 10px;
+    display: flex;
+    border: solid 3px #004225;
+    border-radius: 10px;
+    align-items: center;
+    min-width: 300px;
+}
+
+.cart-product1 img{
+    margin: 10px;
+}
+
+.product1-details{
+    margin:5px;
+}
+
+
+.cart-aside{
+    margin: 10px 0 10px 0;
+    padding: 0 0 0 0;
+    grid-area: cart-aside ;
+    background-color: rgb(255, 255, 255);
+
+    justify-content: center;
+}
+
+.cart-aside h2{
+    text-align: center;
+}
+
+.cart-aside p{
+    margin: 0;
+    padding: 2px;
+}
+
+.total{
+    display: flex;
+    margin: 0 0 10px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-value{
+    width: 100px;
+    text-align: right;
+    border: solid 3px rgb(255, 255, 255);
+}
+
+.p-total-value{
+    font-weight: bold;
+    border-top: solid 2px #004225;
+}
+
+.pagar-button{
+    border: solid 2px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+/* FIN Estilo particular a cart.html */
+
+/* Estilo particular a log-in.html */
+
+.log-in-main{
+    margin: 10px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    
+    height:68vh;
+}
+
+.log-in-main div h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-log-in{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+/* FIN: Estilo particular a log-in.html */
+
+/* Estilo particular a women.html y men.html. Se deja las clases con women pero sirve para las 2 paginas*/
+
+.main-women{
+    margin: 10px 0 0 0;
+    grid-area: main-women;
+
+    display: grid;
+    grid-template-areas: 
+    "h2"
+    "left-bar"
+    "section-products"
+    "size-chart"
+
+}
+
+.main-women h2{
+    padding: 0 0 0 10px;
+    margin: 10px;
+    grid-area: h2;
+}
+
+.left-bar{
+    grid-area: left-bar ;
+    margin: 10px 0 0 10px;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.left-bar ul{
+    padding: 0 10px;
+    list-style-type: none;
+}
+
+.left-bar a{
+    font-style: normal;
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+.section-products{
+    margin: 10px;
+    grid-area: section-products ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    width: 500px;
+
+}
+
+.product-block{
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+
+}
+
+.section-products div{
+    border: solid 4px rgb(255, 255, 255);
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.section-products img{
+    height: 60%;
+
+    border: solid 3px rgb(255, 255, 255);
+}
+
+.section-products p{
+    padding: 0;
+    margin: 0;
+    border: solid 3px rgb(255, 255, 255);
+}
+
+.size-chart{
+    padding: 10px 0 30px 0;
+    grid-area: size-chart ;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 2px #004225;
+}
+
+.heading-size{
+    font-size: 20x;
+}
+
+.size-gender{
+    font-size: 16px;
+}
+
+/* Estilo tabla */
+table{
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+td, th {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+
+  }
+  
+  tr:nth-child(even){background-color: #00422592;}
+ 
+  
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #004225;
+    color: white;
+  }
+
+/* ANIMACION A SALE */
+.left-bar-sale{
+    font-weight: 700;
+    animation-name: movimiento-sale;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+
+}
+
+@keyframes movimiento-sale {
+    0%{
+        color: red;
+        font-weight: 700;
+    }
+
+    25%{
+        color: rgb(0, 0, 0);
+    }
+
+    75%{
+        color: red;
+        font-weight: 700;
+    }
+
+    100%{
+        color: rgb(0, 0, 0);
+    }
+
+}
+
+/* FIN ANIMACION A SALE */
+
+/* FIN Estilo particular a cart.html */
+
+/* ********************************** */
+/* AGREGO MEDIA QUERIES*/
+/* ********************************** */
+@media screen and (min-width:768px) {
+
+    /* AGREGO MEDIA QUERIES AL MAIN del INDEX*/
+
+    header img{
+        height: 30px;
+        padding: 5px;
+    }
+    
+    h1{
+        color:#004225;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        display: inline-block;
+        padding-left:30px;
+    }
+    
+    .header-nav{
+        padding: 25px 20px 0 20px;
+        flex-direction: row;
+    }
+    
+    .header-nav li{
+        margin:10px 10px 10px 10px;
+        font-size: 16px;
+    }
+    
+  
+    /* AGREGO MEDIA QUERIES AL MAIN del INDEX*/
+
+    .select-catalogo{
+        flex-direction: row;
+    }
+
+        /* AGREGO MEDIA QUERIES AL Footer*/
+
+    footer{
+        padding: 10px 10px 10px 10px;
+        flex-direction: row;
+    }
+           
+    .contact-data{
+        flex-direction: column;
+    }
+
+        /* AGREGO MEDIA QUERIES AL MAIN DEL CART*/
+    .main-cart{
+        display: grid;
+        grid-template-areas: 
+        "cart-section1 cart-aside"
+        ;
+    
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .cart-aside h2{
+        text-align: left;
+    }
+    
+    .cart-aside p{
+        margin: 0;
+        padding: 2px;
+    }
+    
+    .total{
+        display: flex;
+        margin: 0 0 10px 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .total-value{
+        width: 250px;
+        text-align: right;
+        border: solid 3px rgb(255, 255, 255);
+    }
+
+    /* AGREGO MEDIA QUERIES AL MAIN DEL CONTACT.HTML*/
+    .main-contacto{
+        min-width: 1100px;
+   
+        flex-direction: row;
+    
+        margin: 0 0 150px 0;
+    }
+
+    .formulario{
+        margin: 10px 100px;
+    }
+    
+    .div-contact{
+        margin: 10px 100px;
+    }
+
+    /* AGREGO MEDIA QUERIES AL MAIN DEL MEN.HTML Y WOMEN.HTML*/
+
+    .main-women{
+        margin: 10px 0 0 0;
+        grid-area: main-women;
+    
+        display: grid;
+        grid-template-areas: 
+        "h2 h2"
+        "left-bar section-products"
+        "size-chart size-chart"
+    
+    }
+
+    .section-products{
+        width: auto;    
+    }
+    
+
+}
+
+@media screen and (min-width:1440px) {
+    body{
+        border: solid 2px #004225;;
+    }
+}
