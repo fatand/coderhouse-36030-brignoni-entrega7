@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -16,37 +18,49 @@
 
 <body>
     <header>
-            <div>
-                <a href="index.html">
-                    <h1>SPORT SHOP</h1>
-                </a>
-            </div>
-        
-            <nav>
-                <ul class="header-nav">
-                    <li>
-                        <a href="index.html" class="header-nav-a">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="pages/women.html" class="header-nav-a">Mujeres</a>
-                    </li>
-                    <li>
-                        <a href="pages/men.html" class="header-nav-a">Hombres</a>
-                    </li>
-                    <li>
-                        <a href="pages/contacto.html" class="header-nav-a">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
 
-            <div class="header-right">
-                    <a href="pages/log-in.html" class="header-right-a">
-                        <img src="img/log-in.png" alt="Log-in">
-                    </a>
-                    <a href="pages/cart.html" class="header-right-a">
-                        <img src="img/cart.png" alt="Cart">
-                    </a>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <div class="container-fluid d-flex align-items-center justify-content-between navegador-contenedor">
+                    
+                    <div>
+                        <a class="navbar-brand navbar-brand-style " href="index.html">SPORT SHOP</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="pages/women.html">Mujeres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="pages/men.html">Hombres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="pages/contacto.html">Contacto</a>
+                        </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex align-items-center mx-10">
+                        
+                        <div class="header-right align-items-center">
+                            <a href="pages/log-in.html" class="header-right-a pxy-0">
+                                <img src="img/log-in.png" alt="Log-in">
+                            </a>
+                            <a href="pages/cart.html" class="header-right-a">
+                                <img src="img/cart.png" alt="Cart">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+              </nav>
 
      
     </header>
@@ -85,8 +99,8 @@
         </section>
         
         <section>
-            <div class="texto-empresa">
-                <h2 class="h2-name">SPORT SHOP</h2>
+            <div class="texto-empresa px-2 ">
+                <h2 class="h2-name ">SPORT SHOP</h2>
                 <p>Desde sus comienzos en 2003, la tienda se encontraba instalada en el garage de su dueño. Los vecinos y peatones de la zona visitaban a diario la misma, donde se llevaban productos de <span>excelente calidad</span>. Comenzó a hacerse conocer en la zona, creciendo sus ventas y a mediados de 2005, se instala la primer tienda en el shopping del barrio.</p>
     
                 <p>Agregando grandes variedades de productos, la tienda actualmente se encuentra encabezando la lista de empresas proveedoras de articulos deportivos en la ciudad. Mediante un excelente manejo de e-commerce y logística, la empresa llega a la puerta de su casa en el mismo día.
@@ -95,7 +109,7 @@
 
             
             <div class="frase">
-                <h3 class="h3-frase">El momento es AHORA.</h3>
+                <h3 class="h3-frase ">El momento es AHORA.</h3>
             </div>
         </section>
 
@@ -145,6 +159,8 @@
 
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>

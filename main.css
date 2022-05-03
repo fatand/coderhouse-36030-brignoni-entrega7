@@ -20,7 +20,7 @@ body{
     font-family: 'Raleway', sans-serif;
     background-size: cover;
 
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: auto;
 }
 
@@ -51,8 +51,8 @@ header img:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 16px 0 10px 0;
-    padding:10px 20px 0 0px;
+    margin: 0;
+    padding:0;
     height: 30px;
 }
 
@@ -65,6 +65,13 @@ header img:hover{
     transform: scale(1.2);
 }
 
+.btn-outline-success {
+    color: #004225!important;
+    border-color: #004225!important;;
+}
+
+
+
 h1{
     color:#004225;
     text-align: center;
@@ -73,14 +80,30 @@ h1{
     display: inline-block;
     padding-left:30px;
     transition: all 0.3s ease-in-out;
-}
+} 
 
 h1:hover{
     transform: scale(1.1);
 }
 
+
+.navbar-brand-style{
+    color:#004225!important;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    display: inline-block;
+    padding-left:30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand-style:hover{
+    transform: scale(1.1);
+}
+
 .header-nav{
-    padding: 5px 10px 0 5px;
+    padding: 50;
     display:flex;
     flex-direction: column;
 }
@@ -111,7 +134,6 @@ h1:hover{
     color: #004225;
     font-weight: 600;
 }
-
 
 main{
     grid-area: main;
@@ -206,20 +228,62 @@ h2{
     padding:  0 0 0 0;
     color: #004225;
     text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
 }
+
+.h2-women{
+    padding:  0 0 0 0;
+    color: #004225;
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.h2-contact{
+    padding:  0 0 0 0;
+    color: #004225;
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.h2-cart{
+    padding:  0 0 0 0;
+    color: #004225;
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+}
+
 
 h3{
     color: black;
     display: inline-block;
     padding: 0 0 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+    grid-area: h3;
+}
 
+h4{
+    color: black;
+    display: inline-block;
+    padding: 0 0 0 10px;
+    font-weight: bold;
+    font-size: 16px;
     grid-area: h3;
 }
 
 .h3-frase{
     color: white;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding: 0 0 0 10px;
+    margin: 0;
     animation-name: movimiento-frase;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -231,7 +295,7 @@ h3{
 @keyframes movimiento-frase {
     0%{
         transform: scale(1.2);
-        text-decoration: underline;
+
     }
 
     50%{
@@ -257,9 +321,12 @@ h4{
 }
 
 .frase {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #004225;
     color: white;
+    height: 50px;
 }
 
 p{
@@ -269,7 +336,7 @@ p{
 .banner{
     display: inline-block;
     width: 100vw;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 
@@ -287,7 +354,7 @@ p{
     justify-content: center;
     align-items: center;
     border: solid 3px rgb(255, 255, 255);
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 .select-gender{
@@ -324,7 +391,7 @@ p{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     margin: 0 0 10px 0;
 }
@@ -644,6 +711,8 @@ td, th {
 
     /* AGREGO MEDIA QUERIES AL MAIN del INDEX*/
 
+    
+
     header img{
         height: 30px;
         padding: 5px;
@@ -659,7 +728,7 @@ td, th {
     }
     
     .header-nav{
-        padding: 25px 20px 0 20px;
+        padding: 0;
         flex-direction: row;
     }
     
@@ -757,8 +826,23 @@ td, th {
 
 }
 
-@media screen and (min-width:1440px) {
+/* @media screen and (min-width:1440px) {
     body{
         border: solid 2px #004225;;
     }
+} */
+
+
+.form-log-in label{
+    margin: 5px;
+}
+
+
+.form-log-in input{
+    margin: 5px;
+}
+
+.form-log-in button{
+    margin: 5px;
+    background-color: #004225;
 }
